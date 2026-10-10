@@ -15,8 +15,7 @@ Benchmarks on my PC.
 | AVX512    | 12      | 87.397s        | ~1.46b          |
 | AVX512    | 6       | 144.563s       | ~1.46b          |
 
-Surprisingly the time goes up with more registers but this makes more sense when looking at the code.
-My implementation has the same issue as when you do raytracing in Pixel Shaders. 
-When rays start to bounce they diverge and a lot of work just gets discarded. 
-I will try a separate method where only one ray is evaluated by any given thread but multiple hittable items get evaluated at once (i.e 4-8-16 spheres getting evaluated at once)
-Stay tuned :P
+## Closing Thoughts
+Surprisingly the time goes up with more registers but this makes more sense when looking at the code. My implementation has the same issue as when raytracing is done in Pixel Shaders, when rays start to bounce they diverge and a lot of work just gets discarded.\
+\
+I want to try another method where only one ray is evaluated by any given thread. Instead multiple hittable items get evaluated at once
