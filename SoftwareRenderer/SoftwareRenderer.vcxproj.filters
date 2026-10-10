@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\SoftwareRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Hittable\Sphere.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\HittableList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Materials\Lambertian.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MaterialList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Materials\Metal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Materials\Dielectric.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ThreadPool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Hittable\BVHBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Box.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\HittablePool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\SIMD\SMFloat.h" />
+    <ClInclude Include="Source\SIMD\SMFloatAll.h" />
+    <ClInclude Include="Source\SIMD\SMVector3.h" />
+    <ClInclude Include="Source\SIMD\SMVector2.h" />
+    <ClInclude Include="Source\Ray.h" />
+    <ClInclude Include="Source\Texture.h" />
+    <ClInclude Include="Source\Hittable.h" />
+    <ClInclude Include="Source\Hittable\Sphere.h" />
+    <ClInclude Include="Source\HittableList.h" />
+    <ClInclude Include="Source\rtweekend.h" />
+    <ClInclude Include="Source\Interval.h" />
+    <ClInclude Include="Source\Camera.h" />
+    <ClInclude Include="Source\Material.h" />
+    <ClInclude Include="Source\Materials\Lambertian.h" />
+    <ClInclude Include="Source\MaterialList.h" />
+    <ClInclude Include="Source\Materials\Metal.h" />
+    <ClInclude Include="Source\Materials\Dielectric.h" />
+    <ClInclude Include="Source\ThreadPool.h" />
+    <ClInclude Include="Source\Hittable\BVHBox.h" />
+    <ClInclude Include="Source\Box.h" />
+    <ClInclude Include="Source\SIMDUsings.h" />
+    <ClInclude Include="Source\morton.h" />
+    <ClInclude Include="Source\HittablePool.h" />
+  </ItemGroup>
+</Project>
