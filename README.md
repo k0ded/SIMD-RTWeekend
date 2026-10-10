@@ -3,8 +3,8 @@ Final test includes a final render that renders an image that is 1200x675 500spp
 
 # Statistics
 Benchmarks on my PC.
-CPU: Intel i5-11400F (6 Cores 12 threads)
-RAM: CORSAIR VENGANCE LPX 2x16GB DDR4 C16 @ 2133MHz
+- CPU: Intel i5-11400F (6 Cores 12 threads)
+- RAM: CORSAIR VENGANCE LPX 2x16GB DDR4 C16 @ 2133MHz
 
 | SIMD TYPE | THREADS | EXECUTION TIME | TOTAL RAYS CAST | 
 | --------- | ------- | -------------- | --------------- |
