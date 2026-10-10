@@ -88,7 +88,7 @@ void Camera::render(const Hittable& world, const MaterialList& materials)
 	int ySliceSize = ((image_height + (yStride - 1)) / yStride) / threadsY;
 
 	{
-		ThreadPool pool{};
+		ThreadPool pool { 12 };
 		int threadsDispatched = 0;
 		std::atomic_int threadsFinished = 0;
 		for (int ySlice = 0; ySlice < threadsY; ++ySlice)
@@ -297,7 +297,7 @@ Vec3 Camera::RayColor(const Ray& ray, int depth, const Hittable& world, const Ma
 	hit = Vec3::ifelse(didScatter, hit, { 0.0f });
 	auto result = Vec3::ifelse(mask, hit, miss);
 
-	constexpr bool debugBVH = true;
+	constexpr bool debugBVH = false;
 	if (depth == max_depth && debugBVH)
 	{
 		float highFactor = std::max((float)record.totalObjectsEvaluated - 5.f, 0.0f) / 15.0f;
